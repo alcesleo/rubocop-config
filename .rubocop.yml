@@ -36,7 +36,7 @@ Style/SignalException:
 
 Metrics/BlockLength:
   Exclude:
-    - "*_spec.rb"
+    - "**/*_spec.rb"
 
 ### Disabled
 
