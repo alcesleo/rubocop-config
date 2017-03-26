@@ -1,0 +1,44 @@
+# Documentation links
+#
+# https://github.com/bbatsov/rubocop/blob/master/config/default.yml
+# https://github.com/bbatsov/rubocop/blob/master/manual/cops.md
+
+Metrics/LineLength:
+  Max: 120
+
+Style/StringLiterals:
+  EnforcedStyle: double_quotes
+
+Style/TrailingCommaInArguments:
+  EnforcedStyleForMultiline: comma
+
+Style/TrailingCommaInLiteral:
+  EnforcedStyleForMultiline: comma
+
+Style/PercentLiteralDelimiters:
+  PreferredDelimiters:
+    "%":  "()"
+    "%i": "[]"
+    "%I": "[]"
+    "%q": "()"
+    "%Q": "()"
+    "%r": "{}"
+    "%s": "()"
+    "%w": "[]"
+    "%W": "[]"
+    "%x": "()"
+
+Style/BlockDelimiters:
+  EnforcedStyle: semantic
+
+Style/SignalException:
+  EnforcedStyle: semantic
+
+Metrics/BlockLength:
+  Exclude:
+    - "*_spec.rb"
+
+### Disabled
+
+Style/Documentation:
+  Enabled: false
