@@ -38,3 +38,20 @@ probably want to `.gitignore` that:
 ```
 .rubocop-https---raw-githubusercontent-com-alcesleo-rubocop-config-master--rubocop-yml
 ```
+
+## Code Climate
+
+Code Climate currently does not allow RuboCop to download this file, and will
+instead give you an error. You can however tell Code Climate to download the
+file to the location where RuboCop expects it using its [prepare
+step](https://docs.codeclimate.com/docs/configuring-the-prepare-step),
+bypassing this issue.
+
+To do this, put this in your `.codeclimate.yml`:
+
+```yaml
+prepare:
+  fetch:
+  - url: "https://raw.githubusercontent.com/alcesleo/rubocop-config/master/.rubocop.yml"
+    path: ".rubocop-https---raw-githubusercontent-com-alcesleo-rubocop-config-master--rubocop-yml"
+```
