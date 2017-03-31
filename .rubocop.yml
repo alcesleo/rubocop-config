@@ -3,6 +3,10 @@
 # https://github.com/bbatsov/rubocop/blob/master/config/default.yml
 # https://github.com/bbatsov/rubocop/blob/master/manual/cops.md
 
+AllCops:
+  DisplayCopNames: true
+  DisplayStyleGuide: true
+
 Metrics/LineLength:
   Max: 120
 
