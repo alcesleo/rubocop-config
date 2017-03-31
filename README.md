@@ -33,7 +33,7 @@ end
 ### .gitignore
 
 RuboCop will download the config file and put it in your root directory, you
-probably want to `.gitignore` that:
+might want to `.gitignore` that:
 
 ```
 .rubocop-https---raw-githubusercontent-com-alcesleo-rubocop-config-master--rubocop-yml
