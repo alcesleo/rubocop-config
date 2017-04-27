@@ -50,6 +50,7 @@ Style/BlockDelimiters:
     - let!
     - subject
     - watch
+    - fetch
   IgnoredMethods:
     - lambda
     - proc
