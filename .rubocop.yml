@@ -34,6 +34,26 @@ Style/PercentLiteralDelimiters:
 
 Style/BlockDelimiters:
   EnforcedStyle: semantic
+  ProceduralMethods:
+    - benchmark
+    - bm
+    - bmbm
+    - create
+    - each_with_object
+    - measure
+    - new
+    - realtime
+    - tap
+    - with_object
+  FunctionalMethods:
+    - let
+    - let!
+    - subject
+    - watch
+  IgnoredMethods:
+    - lambda
+    - proc
+    - it
 
 Style/SignalException:
   EnforcedStyle: semantic
