@@ -6,7 +6,7 @@ echo "Installing alcesleo/rubocop-config into $INSTALL_PATH"
 
 # Install the dependency in the gemspec or Gemfile
 if [ -f *.gemspec ]; then
-    echo "Installing development dependency in gemspec"
+    echo "- Adding development dependency in gemspec"
 
     # `-i ''` replaces in file without backup
     # `\'$'\n` creates the newline
@@ -18,3 +18,7 @@ else
     echo "No gemspec or Gemfile found in $INSTALL_PATH"
     exit 1
 fi
+
+# Add the inherit statement to .rubocop.yml
+echo "- Adding inherit_from in .rubocop.yml "
+echo -e "inherit_from:\n  - https://raw.githubusercontent.com/alcesleo/rubocop-config/master/.rubocop.yml\n$(cat .rubocop.yml 2>/dev/null)" > .rubocop.yml
