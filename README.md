@@ -4,10 +4,24 @@ My personal [RuboCop](https://github.com/bbatsov/rubocop/) preferences.
 
 ## Installation
 
+### Quick installation
+
+The `install.sh` script tries to follow the instructions below automatically. For normal projects, this oneliner should do everything you need:
+
+```bash
+bash <(curl -s https://raw.githubusercontent.com/alcesleo/rubocop-config/master/install.sh)
+```
+
+**Otherwise, follow the manual instructions:**
+
 ### Install RuboCop
 
 ```ruby
+# Gemfile
 gem "rubocop", "~> 0.48"
+
+# If it's a gem, add this to the gemspec instead
+spec.add_development_dependency "rubocop", "~> 0.48"
 ```
 
 ### .rubocop.yml
